@@ -1,0 +1,146 @@
+.imgstyle{
+  height: 200px;
+  width: 200px;
+  padding: 25px;
+  animation: bounce 0.5s;
+  animation: bounce 0.5s; 
+}
+
+@keyframes bounce { 
+from { 
+    transform: translate3d(0, 0, 0); 
+} 
+to { 
+    transform: translate3d(0, 200px, 0); 
+} 
+} 
+.emailForm > form> div > div ,.emailForm > form> div > div>div{
+  padding: 5px;
+}
+.common{
+  padding: 15px;
+}
+.main{
+  background-color: green;
+}
+.child{
+  color: white;
+}
+.main :last-child{
+  color: blue;
+}
+.class{
+  height: 50px;
+  width: 50px;
+  background-color: aliceblue;
+}
+.sidebar {
+    margin: 0;
+    position: relative;
+    overflow: auto;
+    height: inherit;
+    background-color: #54B689;
+    color: white;
+    /* animation: sidebarAnimate 2s infinite; */
+  }
+  
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar{
+    text-align: center;
+    float: none;
+  }
+}
+  .mainContent{
+    display: flex;
+
+  }
+  .skills{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .skills > aside > div >svg{
+   width: 100%;
+     
+  }
+  .links{
+    display: flex;
+    align-self: center;
+  }
+  .links > a{
+      width: 32px;
+      height: 32px;
+      padding-top: 5px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 50%;
+      background-color: #fff;
+      margin-right: 4px;
+  
+  }
+  .links > a:hover{
+    background-color: rgb(198 241 216);
+  }
+  .links > a:hover > svg{
+    animation: flip-with-rotate 1s;
+  }
+  @keyframes flip-with-rotate {
+    0% {
+        transform: perspective(400px) rotateY(0);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(360deg);
+    }
+}
+
+  .skills >aside> div{
+    display: flex;
+  
+  }
+  .contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .emailForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .description{
+    padding: 4rem ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .head1{
+    display: flex;
+    justify-content: center;
+  }
+  @keyframes sidebarAnimate {
+    0%{
+      background-color: rgb(158, 207, 228);
+    }
+    25%{
+      background-color: rgb(106, 159, 181);
+    }
+    50%{
+      background-color: rgb(83, 128, 148);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .emailForm >div > div {
+   flex:  auto;
+    }
+  }
